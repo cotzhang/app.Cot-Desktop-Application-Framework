@@ -2,5 +2,26 @@
   "dependencies": {
     "electron": "^19.0.4",
     "glasstron": "^0.1.1"
-  }
+  },
+  "name": "com.cot.framework.desktop",
+  "version": "1.0.0",
+  "description": "Basic desktop framework for Cot Applications",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cotzhang/Desktop-Application-Framework.git"
+  },
+  "keywords": [
+    "cot"
+  ],
+  "author": "Cot Zhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cotzhang/Desktop-Application-Framework/issues"
+  },
+  "homepage": "https://github.com/cotzhang/Desktop-Application-Framework#readme"
 }
