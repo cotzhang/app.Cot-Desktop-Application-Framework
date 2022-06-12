@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "electron": "^19.0.4",
+    "glasstron": "^0.1.1"
+  }
+}
