@@ -22,7 +22,9 @@ function spawnWindow(){
 		height: 400,
 		frame: false,
 		resizable:false,
-		webPreferences: {
+		transparent:true,
+		hasShadow:true,
+		webPreferences:{
 	  		nodeIntegration: true, 
 	  		contextIsolation: false
     	}
@@ -30,6 +32,7 @@ function spawnWindow(){
 	win.blurType = "blurbehind";
 	win.setBlur(true);
 	win.loadFile('app/index.html')
+	win.setHasShadow(true)
 	win.removeMenu() 
 	//win.setAlwaysOnTop("alwaysOnTop")
 	//win.webContents.openDevTools({mode:"detach"})
