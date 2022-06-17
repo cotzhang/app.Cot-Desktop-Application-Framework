@@ -32,7 +32,7 @@ function spawnWindow(){
 	win.loadFile('app/index.html')
 	win.removeMenu() 
 	//win.setAlwaysOnTop("alwaysOnTop")
-	win.webContents.openDevTools({mode:"detach"})
+	//win.webContents.openDevTools({mode:"detach"})
 	remote.enable(win.webContents)
 	return win;
 }

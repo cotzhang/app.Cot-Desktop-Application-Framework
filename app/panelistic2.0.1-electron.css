@@ -121,7 +121,7 @@ h6{
 	font-size: 12px;
 }
 
-input{
+input,textarea{
 	outline: none;
 	border: 1px solid #cccccc99;
 	background-color: #ffffff88;
@@ -129,6 +129,10 @@ input{
 	padding: 9px;
 	margin: 0px;
 	font-family: sfr;
+}
+
+textarea{
+	max-width: calc(100% - 20px);
 }
 
 .panelistic_checkbox{
@@ -163,12 +167,12 @@ input{
 	background-color: #cccccc88;
 }
 
-input:hover{
+input:hover,textarea:hover{
 	border: 1px solid #bbbbbb99;
 	background-color: #eeeeee88;
 }
 
-input:active{
+input:active,,textarea:active{
 	border: 1px solid #aaaaaa99;
 	background-color: #cccccc88;
 }
@@ -248,7 +252,7 @@ select option{
 	#controlbtn_minbtn:active{
 		background-color: #888;
 	}
-	input,select,.panelistic_checkbox{
+	input,select,.panelistic_checkbox,textarea{
 		border: 1px solid #44444499;
 		background-color: #33333388;
 		color: white;
@@ -262,10 +266,10 @@ select option{
 	.panelistic_panel:active{
 		background-color: #66666655;
 	}
-	input:hover,select:hover,.panelistic_checkbox:hover{
+	input:hover,select:hover,.panelistic_checkbox:hover,textarea:hover{
 		background-color: #33333388;
 	}
-	input:active,select:active,.panelistic_checkbox:active{
+	input:active,select:active,.panelistic_checkbox:active,textarea:active{
 		background-color: #66666655;
 	}
 }
