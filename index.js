@@ -22,7 +22,7 @@ function spawnWindow(){
 		height: 400,
 		frame: false,
 		resizable:false,
-		transparent:true,
+		show:false,
 		hasShadow:true,
 		webPreferences:{
 	  		nodeIntegration: true, 
@@ -37,5 +37,8 @@ function spawnWindow(){
 	//win.setAlwaysOnTop("alwaysOnTop")
 	//win.webContents.openDevTools({mode:"detach"})
 	remote.enable(win.webContents)
+	win.webContents.on('did-finish-load', () => {
+		win.show();
+	});
 	return win;
 }
