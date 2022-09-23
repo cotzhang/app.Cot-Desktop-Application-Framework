@@ -29,7 +29,7 @@ function spawnWindow(){
 	  		contextIsolation: false
     	}
 	});
-	win.blurType = "blurbehind";
+	win.blurType = "acrylic";
 	win.setBlur(true);
 	win.loadFile('app/index.html')
 	win.setHasShadow(true)

@@ -1,4 +1,4 @@
-/*version: panelistic 2.0.1 for Electron apps*/
+/*version: panelistic 2.0.2 for Electron apps*/
 /*author: cotzhang@github*/
 
 * {
@@ -36,7 +36,7 @@ body{
 	bottom: 0px;
 	position: absolute;
 	color: black;
-	background-color: #eeeeee99;
+	background-color: #ffffffaa;
 }
 
 #panelistic_titlebar{
@@ -243,7 +243,7 @@ select option{
 
 @media (prefers-color-scheme: dark) {
 	#panelistic_window{
-		background-color: #11111188;
+		background-color: #11111155;
 		color: white;
 	}
 	.panelistic_controlbtn{
