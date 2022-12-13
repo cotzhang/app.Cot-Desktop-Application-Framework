@@ -1,31 +1,27 @@
 {
-  "dependencies": {
-    "@electron/remote": "^2.0.8",
-    "glasstron": "^0.1.1"
-  },
-  "name": "com.cot.framework.desktop",
-  "version": "1.0.0",
-  "description": "Basic desktop framework for Cot Applications",
-  "main": "index.js",
-  "devDependencies": {
-    "electron": "^19.0.4",
-    "electron-packager": "^15.5.1"
-  },
-  "scripts": {
-    "start": "electron .",
-    "build": " electron-packager . Cot-Desktop-Application-Framework --platform=win32 --icon=icon.ico --app-version=1.0.0 --overwrite --out=../build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cotzhang/Desktop-Application-Framework.git"
-  },
-  "keywords": [
-    "cot"
-  ],
-  "author": "Cot Zhang",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cotzhang/Desktop-Application-Framework/issues"
-  },
-  "homepage": "https://github.com/cotzhang/Desktop-Application-Framework#readme"
+	"name": "framework-app-name",
+	"version": "0.5.11",
+	"description": "Desktop framework of panelistic 3.0",
+	"keywords": [
+		"panelistic",
+		"blur",
+		"fluent",
+		"electron"
+	],
+	"author": "Cot Zhang",
+	"main": "main.js",
+	"scripts": {
+		"start": "electron .",
+		"build": "electron-packager . PanelisticFramework --platform=win32 --icon=icon.ico --app-version=1.0.0 --overwrite --out=../build"
+	},
+	"devDependencies": {
+		"electron": "^22.0.0"
+	},
+	"dependencies": {
+		"@electron/remote": "^2.0.9",
+		"electron-packager": "^17.1.1",
+		"electron-rebuild": "^3.2.9",
+		"mica-electron": "^1.1.7",
+		"node-gyp": "^9.3.0"
+	}
 }
