@@ -131,7 +131,7 @@ body{
 
 #panelistic_content{
 	padding: 8px;
-	height: calc(100% - 46px);
+	height: calc(100% - 16px);
 	overflow:auto;
 }
 

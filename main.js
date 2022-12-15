@@ -1,5 +1,6 @@
 const electron = require('electron');
-const { PARAMS, VALUE, MicaBrowserWindow } = require('mica-electron');
+const vibe = require('@pyke/vibe');
+vibe.setup(electron.app);
 const path = require('path');
 const os = require('os')
 const remote = require("@electron/remote/main")
@@ -17,12 +18,10 @@ electron.app.on('ready', () => {
 });
 
 function spawnWindow() {
-	win = new MicaBrowserWindow({
+	win = new electron.BrowserWindow({
 		width: 600,
 		height: 400,
-		frame: false,
-		effect: PARAMS.BACKGROUND.ACRYLIC,
-		theme: VALUE.THEME.AUTO,
+		backgroundColor: '#00000000',
 		resizable: false,
 		webPreferences: {
 			nodeIntegration: true,
@@ -35,6 +34,8 @@ function spawnWindow() {
 	require('@electron/remote/main').enable(win.webContents)
 	// win.setVisualEffect(PARAMS.CORNER, VALUE.CORNER.ROUND); 
 	win.loadFile('index.html')
+	vibe.applyEffect(win, 'acrylic', '#FFFFFF40');
+	if (electron.nativeTheme.shouldUseDarkColors) vibe.setDarkMode(win);
 	//win.setHasShadow(true)
 	win.removeMenu()
 	//win.setAlwaysOnTop("alwaysOnTop")
@@ -45,3 +46,14 @@ function spawnWindow() {
 	});
 	return win;
 }
+
+electron.nativeTheme.on('updated', () => {
+	const wins = electron.BrowserWindow.getAllWindows();
+	if (electron.nativeTheme.shouldUseDarkColors) {
+		vibe.setDarkMode(win);
+
+	} else {
+		vibe.setLightMode(win);
+
+	}
+});

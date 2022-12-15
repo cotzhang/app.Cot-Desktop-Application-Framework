@@ -19,9 +19,9 @@
 	},
 	"dependencies": {
 		"@electron/remote": "^2.0.9",
+		"@pyke/vibe": "^0.3.1",
 		"electron-packager": "^17.1.1",
 		"electron-rebuild": "^3.2.9",
-		"mica-electron": "^1.1.7",
 		"node-gyp": "^9.3.0"
 	}
 }
